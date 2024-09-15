@@ -1,0 +1,15 @@
+/* ext-dark-theme.css */
+
+:root {
+  --main-bg-color: #1e1e1e;
+  --text-color: #ffffff;
+  --border-color: #ccc3;
+  --canvas-bg-color: #252526;
+  --link-color: #19c;
+  --ruler-color: #b2b2b2;
+  --icon-bg-color: #404040;
+  --icon-bg-color-hover: #2b3c45;
+  --input-color: #ffffff;
+  --global-se-spin-input-width: 82px;
+}
+

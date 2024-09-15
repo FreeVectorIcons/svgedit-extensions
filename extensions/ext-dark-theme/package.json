@@ -1,0 +1,16 @@
+{
+    "name": "ext-dark-theme",
+    "version": "1.0.0",
+    "description": "A dark theme extension for SVG-Edit.",
+    "main": "ext-dark-theme.js",
+    "keywords": [
+        "svg-edit",
+        "extension",
+        "dark theme"
+    ],
+    "author": "Hemanta Sapkota",
+    "license": "MIT",
+    "dependencies": {},
+    "scripts": {
+    }
+}

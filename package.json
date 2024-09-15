@@ -1,0 +1,21 @@
+{
+  "name": "svgedit-extensions",
+  "private": "true",
+  "version": "1.0.0",
+  "description": "A collection of extensions for SVG-Edit.",
+  "workspaces": ["extensions/*"],
+  "main": "index.js",
+  "repository": "git@github.com:yolmolabs/svgedit-extensions.git",
+  "author": "Hemanta Sapkota <hemanta@yolmo.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "lint": "standard .",
+    "lint:fix": "standard . --fix"
+  },
+  "devDependencies": {
+    "standard": "17.1.0"
+  }
+}
