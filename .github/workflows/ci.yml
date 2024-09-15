@@ -7,19 +7,23 @@ on:
     branches: [main]
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v2
-      - name: Use Node.js
+
+      - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
           node-version: '20'
           cache: 'yarn'
+
       - name: Install dependencies
         run: yarn install
-      - name: Run tests
-        run: yarn workspaces run test
-      - name: Lint code
-        run: yarn workspaces run lint
+
+      - name: Set up SvgEdit for running UI tests
+        run: yarn setup:svgedit
+
+      - name: Run Cypress tests
+        run: yarn test

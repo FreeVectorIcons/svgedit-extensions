@@ -55,26 +55,24 @@ export default {
     link.href = `${svgEditor.configObj.curConfig.extPath}/ext-dark-theme/ext-dark-theme.css`
     document.head.appendChild(link)
 
-    // Create a button template for the theme toggle button
-    const buttonTemplate = document.createElement('template')
-    const title = `${name}:buttons.0.title`
-
-    buttonTemplate.innerHTML = `
-      <se-button id="dark-theme-toggle" title="${title}" src="theme.svg">
-      </se-button>
-    `
-
-    // Append the toggle button to the left toolbar
-    $id('tools_top').append(buttonTemplate.content.cloneNode(true))
-
-    // Add click event to toggle the dark theme on and off
-    $click($id('dark-theme-toggle'), () => {
-      const stylesheet = document.getElementById('dark-theme-stylesheet')
-      stylesheet.disabled = !stylesheet.disabled
-    })
-
     return {
-      name: 'Dark Theme'
+      name: svgEditor.i18next.t(`${name}:name`),
+      callback () {
+        // Create a button template for the theme toggle button
+        const buttonTemplate = document.createElement('template')
+        const title = `${name}:buttons.0.title`
+
+        buttonTemplate.innerHTML = `<se-button id="dark-theme-toggle" title="${title}" src="ext-dark-theme/theme.svg"> </se-button>`
+
+        // Append the toggle button to the left toolbar
+        $id('tools_top').append(buttonTemplate.content.cloneNode(true))
+
+        // Add click event to toggle the dark theme on and off
+        $click($id('dark-theme-toggle'), () => {
+          const stylesheet = document.getElementById('dark-theme-stylesheet')
+          stylesheet.disabled = !stylesheet.disabled
+        })
+      }
     }
   }
 }

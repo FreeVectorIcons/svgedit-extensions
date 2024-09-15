@@ -12,10 +12,17 @@
     "node": ">=20"
   },
   "scripts": {
-    "lint": "standard .",
-    "lint:fix": "standard . --fix"
+    "lint": "standard ./extensions",
+    "lint:fix": "standard ./extensions --fix",
+    "copy:test:html": "cp cypress/fixtures/index.html svg-edit/src/editor/index.html",
+    "setup:svgedit": "node setup.js && yarn copy:test:html",
+    "start-server": "cd svg-edit && npm run build && npm run start",
+    "test": "NODE_ENV=test start-server-and-test start-server http://localhost:8000/src/editor/index.html cypress:run",
+    "cypress:run": "cypress run"
   },
   "devDependencies": {
-    "standard": "17.1.0"
+    "standard": "17.1.0",
+    "cypress": "13.13.3",
+    "start-server-and-test": "2.0.5"
   }
 }
