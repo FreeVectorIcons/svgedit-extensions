@@ -10,6 +10,8 @@ This repository houses a variety of plugins designed to extend the functionality
 
 ### 1. Dark Theme Toggler (ext-dark-theme)
 
+![ext-dark-theme](./assets/ext-dark-theme.png)
+
 Allows users to switch between light and dark themes, enhancing visibility and reducing eye strain in low-light environments.
 
 - Easy toggle between light and dark themes
