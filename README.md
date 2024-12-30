@@ -24,8 +24,6 @@ Allows users to switch between light and dark themes, enhancing visibility and r
 
 ![ext-codemirror](./assets/ext-codemirror.png)
 
-<video src="./assets/ext-codemirror-svg-streaming.mp4" controls></video>
-
 Adds additional features to the CodeMirror extension, including a view source dialog for display base64 encoded SVG.
 
 [Learn more about ext-codemirror](./extensions/ext-codemirror/README.MD)

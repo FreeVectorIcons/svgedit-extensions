@@ -11,7 +11,7 @@ This extension integrates CodeMirror editor into SVG-Edit, providing syntax-high
 
 ## Installation
 
-To install, copy the `ext-codemirror folder to SVG-Edit's extensions directory. A more robust extension installation mechanism will be provided in the future.
+To install, copy the `ext-codemirror` folder to SVG-Edit's extensions directory.
 
 ## Usage
 
