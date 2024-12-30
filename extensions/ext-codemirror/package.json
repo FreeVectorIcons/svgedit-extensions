@@ -11,8 +11,6 @@
     ],
     "author": "Hemanta Sapkota <hemanta@yolmo.com>",
     "license": "MIT",
-    "dependencies": {
-        "codemirror": "^5.65.2"
-    },
+    "dependencies": {},
     "scripts": {}
 }
