@@ -40,10 +40,13 @@ export default {
         });
 
         $click($id('to_stream'), function () {
-          const exampleSvg = `<svg width="640" height="480" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
- <circle cx="100" cy="0" r="10" fill="red" />
+          const helloSVG = `<svg width="200" height="100" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="lightblue" />
+  <text x="50%" y="50%" font-family="monospace, sans-serif" font-size="20" fill="black" text-anchor="middle" dominant-baseline="middle">
+    Hello, SVG!
+  </text>
 </svg>`;
-          window.extCodeMirror.streamSVG({ value: exampleSvg });
+          window.extCodeMirror.streamSVG({ value: helloSVG });
         });
       },
     };

@@ -77,7 +77,7 @@ export default {
       const success = svgCanvas.setSvgString(arg0);
       if (success) {
         svgEditor.updateCanvas(false);
-        svgEditor.zoomImage();
+        svgEditor.zoomChanged(window, 'canvas');
         svgEditor.layersPanel.populateLayers();
       }
     };
