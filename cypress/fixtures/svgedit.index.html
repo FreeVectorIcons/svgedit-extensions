@@ -25,7 +25,7 @@
   <div id="container" style="width:100%;height:550px"></div>
   <h1>End</h1>
   -->
-  <div id="container" style="width:100%;height:100vh"></div>
+  <div id="container" style="width:100%;height:100vh;display:flex;flex-direction:row"></div>
 </body>
 <!-- If you do not wish to add extensions by URL, you can add calls
       within the following file to svgEditor.setConfig -->
@@ -35,7 +35,7 @@
   const svgEditor = new Editor(document.getElementById('container'))
   svgEditor.setConfig({
     allowInitialUserOverride: true,
-    extensions: ['ext-dark-theme'],
+    extensions: ['ext-dark-theme', 'ext-codemirror'],
     noDefaultExtensions: true,
     userExtensions: [/* { pathName: '/packages/react-test/dist/react-test.js' } */]
   })

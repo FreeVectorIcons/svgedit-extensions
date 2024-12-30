@@ -20,6 +20,14 @@ Allows users to switch between light and dark themes, enhancing visibility and r
 
 [Learn more about ext-dark-theme](./extensions/ext-dark-theme/README.MD)
 
+### 2. CodeMirror Extras (ext-codemirror)
+
+![ext-codemirror](./assets/ext-codemirror.png)
+
+Adds additional features to the CodeMirror extension, including a view source dialog and a base64 encoder/decoder tool.
+
+[Learn more about ext-codemirror](./extensions/ext-codemirror/README.MD)
+
 ## Installation
 
 To use these extensions with SVG-Edit:

@@ -2,7 +2,7 @@ name: CI
 
 on:
   push:
-    branches: [main]
+    branches: [ext-codemirror]
   pull_request:
     branches: [main]
 
@@ -23,7 +23,7 @@ jobs:
         run: yarn install
 
       - name: Set up SvgEdit for running UI tests
-        run: yarn setup:svgedit
+        run: yarn prepare:test:environment
 
       - name: Run Cypress tests
         run: yarn test

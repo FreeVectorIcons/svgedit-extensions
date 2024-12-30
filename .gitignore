@@ -20,3 +20,5 @@ instrumented
 dist
 coverage/coverage-summary.json
 svg-edit
+*.log
+SPEC.MD

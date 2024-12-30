@@ -86,6 +86,7 @@ extensions.forEach((extensionName) => {
 });
 
 // run npm install && build
+runCommand("yarn prepare:extensions", { cwd: "." });
 runCommand("npm install", { cwd: SVG_EDIT_DIR });
 runCommand("npm run build", { cwd: SVG_EDIT_DIR });
 
