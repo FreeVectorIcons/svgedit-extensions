@@ -24,7 +24,7 @@ Allows users to switch between light and dark themes, enhancing visibility and r
 
 ![ext-codemirror](./assets/ext-codemirror.png)
 
-Adds additional features to the CodeMirror extension, including a view source dialog for display base64 encoded SVG.
+This extension integrates the [CodeMirror](https://codemirror.net/) editor into [SVG-Edit](https://github.com/svg-edit) - a popular javascript based vector graphics editor, providing syntax-highlighted source code editing capabilities for SVG content.
 
 [Learn more about ext-codemirror](./extensions/ext-codemirror/README.MD)
 
