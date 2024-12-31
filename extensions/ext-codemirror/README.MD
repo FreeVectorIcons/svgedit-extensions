@@ -39,6 +39,10 @@ The extension provides additional functionality through the `ext-codemirror-extr
 - CodeMirror editor (bundled as `CodeEditor.bundle.js`)
 - SVG-Edit core
 
+## Design
+
+See [DESIGN.MD](./DESIGN.MD)
+
 ## Author
 
 Hemanta Sapkota <hemanta@yolmo.com> 
