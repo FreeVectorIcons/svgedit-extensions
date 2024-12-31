@@ -14,11 +14,13 @@
   "scripts": {
     "lint": "standard ./extensions",
     "lint:fix": "standard ./extensions --fix",
-    "copy:test:html": "cp cypress/fixtures/index.html svg-edit/src/editor/index.html",
-    "setup:svgedit": "node setup.js && yarn copy:test:html",
-    "start-server": "cd svg-edit && npm run build && npm run start",
-    "test": "NODE_ENV=test start-server-and-test start-server http://localhost:8000/src/editor/index.html cypress:run",
-    "cypress:run": "cypress run"
+    "prepare:extensions": "cp cypress/fixtures/svgedit.index.html svg-edit/src/editor/index.html && cp -r extensions/* svg-edit/src/editor/extensions", 
+    "prepare:test:environment": "node setup.js && yarn build:svgedit",
+    "build:svgedit": "cd svg-edit && npm run build",
+    "start:test:server": "cd svg-edit && npm run build && npm run start",
+    "test": "NODE_ENV=test start-server-and-test start:test:server http://localhost:8000/src/editor/index.html cypress:run",
+    "cypress:run": "cypress run",
+    "cypress:install": "cypress install"
   },
   "devDependencies": {
     "standard": "17.1.0",

@@ -1,0 +1,16 @@
+{
+    "name": "ext-codemirror",
+    "version": "1.0.0", 
+    "description": "CodeMirror code editor integration for SVG-Edit",
+    "main": "ext-codemirror.js",
+    "keywords": [
+        "svg-edit",
+        "extension",
+        "codemirror",
+        "editor"
+    ],
+    "author": "Hemanta Sapkota <hemanta@yolmo.com>",
+    "license": "MIT",
+    "dependencies": {},
+    "scripts": {}
+}

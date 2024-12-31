@@ -8,7 +8,7 @@
         "extension",
         "dark theme"
     ],
-    "author": "Hemanta Sapkota",
+    "author": "Hemanta Sapkota <hemanta@yolmo.com>",
     "license": "MIT",
     "dependencies": {},
     "scripts": {}
