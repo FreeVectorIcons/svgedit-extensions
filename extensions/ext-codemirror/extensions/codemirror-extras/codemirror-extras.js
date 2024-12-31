@@ -27,7 +27,7 @@ export default {
         <div style="display:flex; flex-direction: row; align-items: center; padding-bottom: 8px;">
             <se-menu id="Menu" label="Menu" alt="logo">
                 <se-menu-item id="to_base64" label="Convert to Base64"></se-menu-item>
-                <se-menu-item id="to_stream" label="SVG Streaming"></se-menu-item>
+                <se-menu-item id="to_stream" label="Stream SVG"></se-menu-item>
             </se-menu>
         </div>
         `;

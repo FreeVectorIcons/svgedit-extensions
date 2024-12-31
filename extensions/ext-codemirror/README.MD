@@ -26,10 +26,13 @@ The extension exposes a global `extCodeMirror` object with the following methods
 ```
 window.extCodeMirror = {
     getValue: () => string, // Returns the current code editor value
-    setValue: (code: string) => void // Updates the code editor content
-    streamSVG: (svg: string) => void // Streams SVG content to the code editor
+    setValue: ({ value: string }) => void // Updates the code editor content
+    streamSVG: ({ value: string }) => void // Streams SVG content to the code editor
 }
 ```
+
+The extension provides additional functionality through the `ext-codemirror-extras` extension. This includes built-in features such as a "Convert to Base64" dialog for converting SVG to base64 encoded string, and a streaming SVG example that demonstrates real-time code updates. Developers can also create their own extras to extend the core CodeMirror functionality.
+
 
 ## Dependencies
 
