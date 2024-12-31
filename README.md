@@ -20,7 +20,7 @@ Allows users to switch between light and dark themes, enhancing visibility and r
 
 [Learn more about ext-dark-theme](./extensions/ext-dark-theme/README.MD)
 
-### 2. CodeMirror Extras (ext-codemirror)
+### 2. CodeMirror 6 Integration (ext-codemirror)
 
 ![ext-codemirror](./assets/ext-codemirror.png)
 
