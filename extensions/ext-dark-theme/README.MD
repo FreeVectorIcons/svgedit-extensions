@@ -11,6 +11,10 @@ ext-dark-theme is a plugin for SVG-Edit that allows users to switch to a dark th
 - Easy toggle between light and dark themes
 - Seamless integration with SVG-Edit
 
+## Design
+
+See [DESIGN.MD](./DESIGN.MD)
+
 ## Author
 
 Hemanta Sapkota <hemanta@yolmo.com> 
